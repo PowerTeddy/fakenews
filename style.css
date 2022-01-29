@@ -82,10 +82,12 @@ body {
 }
 
 #quiz-iframe {
+    margin: auto;
     margin-top: 45px;
     border: 4px solid #efdace;
     width: 90%;
     height: 500px;
+    display: none;
 }
 
 
