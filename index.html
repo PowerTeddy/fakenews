@@ -118,7 +118,7 @@
     <script type="text/javascript" language="javascript">
 
         var amtDots = 1
-        setInterval(() => {
+        const dots = setInterval(() => {
             amtDots += 1
             amtDots %= 3
 
@@ -126,6 +126,7 @@
         }, 500);
 
         window.onload=function() {
+            clearInterval(dots)
             setTimeout(func1, 1000);
         };
         
