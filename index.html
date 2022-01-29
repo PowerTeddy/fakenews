@@ -86,11 +86,14 @@
         <img id="seperator" src="https://i.imgur.com/d3UGk0c.png">
     
         <section id="quiz">
+            <div id="iframeloading" class="Title">
+                Quiz en cours de chargement.
+            </div>
             <iframe id="quiz-iframe" src="https://aa3t1nbyif7.typeform.com/to/TKlHNVjg"></iframe>
         </section>
 
         <section id="resultat">
-            <h2 class="Title">Que faire selon le résultat du test</h2>
+            <h2 class="Title" style="margin: 45px;">Que faire selon le résultat du test</h2>
             <div class="paragraphs">
                 <span style="font-size: 25px; font-weight: bold;">Si votre fin est:</span>
                 <br><br>
@@ -113,12 +116,22 @@
         </footer>
     </body>
     <script type="text/javascript" language="javascript">
+
+        var amtDots = 1
+        setInterval(() => {
+            amtDots += 1
+            amtDots %= 3
+
+            document.getElementById("iframeloading").innerHTML = "Quiz en cours de chargement." + ".".repeat(amtDots)
+        }, 500);
+
         window.onload=function() {
-            setTimeout(func1, 2000);
+            setTimeout(func1, 1000);
         };
         
         function func1() {
             document.getElementById("quiz-iframe").style.display = "block";
+            document.getElementById("iframeloading").remove()
         }
     </script>
 </html>
