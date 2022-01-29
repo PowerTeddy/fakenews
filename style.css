@@ -1,0 +1,176 @@
+body {
+    text-align: center;
+    font-family: "Barlow", sans-serif;
+    background-color: #e5e5e4;
+    margin: 0;
+}
+
+#PageTitle {
+    color: #393939;
+    font-size: 27px;
+    font-weight: 500;
+    margin: 35px;
+}
+
+.Title {
+    color: #393939;
+    font-size: 32px;
+    font-weight: bold;
+    font: normal normal normal 20px/1.67em barlow-extralight, barlow, sans-serif;;
+}
+
+#start_thing {
+    padding-bottom: 30px;
+}
+
+#introduction {
+    width: 100%;
+    background-color: #efdace;
+    padding-top: 25px;
+    padding-bottom: 35px;
+}
+
+#authors {
+    text-align: left !important;
+    font-weight: 200;
+    margin: 20px;
+}
+
+#buttonscroll {
+    transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    border-radius: 5px;
+    background-color: transparent;
+    border: solid 2px #d49b7a;
+    width: 60vw;
+    height: 45px;
+    font-weight: 200;
+    font-family: 'Nunito', sans-serif;
+    font-size: 17px;
+}
+
+#buttonscroll:hover {
+    background-color: #e5e5e440;
+    border: dotted 2px #d49b7a;
+}
+
+.paragraphs {
+    margin-right: 25px;
+    margin-left: 25px;
+    letter-spacing: normal;
+    line-height: 1.875em;
+    font-size: 17px;
+    color: #000000;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+}
+
+#seperator {
+    position: absolute;
+    width: 80%;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#thumbnail {
+    width: 94%;
+    height: auto;
+}
+
+#quiz {
+    padding: 25px;
+}
+
+#quiz-iframe {
+    margin-top: 45px;
+    border: 4px solid #efdace;
+    width: 90%;
+    height: 500px;
+}
+
+
+#resultat {
+    padding: 25px;
+    background-color: #dfdfdf;
+}
+
+#resultat > .paragraphs {
+    text-align: left !important;
+}
+
+footer {
+    font-family: "Barlow", sans-serif;
+    font-weight: 200;
+    padding-bottom: 35px;
+    padding-top: 70px;
+}
+
+
+
+
+/* desktop compatibility */
+
+
+@media (min-width: 300px) {
+    #buttonscroll {
+        width: 275px;
+    }  
+}
+
+@media (min-width: 600px) {
+    #PageTitle {
+        font-size: 42px;
+        width: 23ch;
+        margin: auto;
+        padding-top: 75px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .Title {
+        font-size: 37px;
+    }
+ 
+    #quiz-iframe {
+        height: 80vh;
+    }
+}
+
+@media (min-width: 1000px) {
+    .paragraphs {
+        margin: auto !important;
+        width: 100ch;
+    }
+
+    #thumbnail {
+        width: 950px;
+    }
+
+    #PageTitle {
+        font-size: 62px;
+        width: 23ch;
+        margin: auto;
+        padding-top: 75px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    #authors {
+        font-size: 20px;
+        text-align: center !important;
+        margin: auto !important;
+        margin-bottom: 50px !important;
+    }
+
+    .Title {
+        font-size: 57px;
+    }
+
+    #seperator {
+        width: 1000px;
+    }
+
+    #quiz-iframe {
+        height: 700px;
+    }
+}
