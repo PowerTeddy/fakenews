@@ -37,7 +37,7 @@ body {
 }
 
 #buttonscroll {
-    transition: all 500ms ease;
+    transition: border 500ms;
     -webkit-transition: all 500ms ease;
     border-radius: 5px;
     background-color: transparent;
@@ -47,6 +47,9 @@ body {
     font-weight: 200;
     font-family: 'Nunito', sans-serif;
     font-size: 17px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 #buttonscroll:hover {
